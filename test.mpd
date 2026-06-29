@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+2026-06-29 20:09:58 +0200
+https://c402-node61-cdn.connectmedia.hu/130204/0dcc8d6ec11fb72a1a86e359051b7fc9/6a42b4f6/manifest.mpd?v=5sip:89.134.5.200
+-->
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cenc="urn:mpeg:cenc:2013" xmlns:mspr="urn:microsoft:playready" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="dynamic" availabilityStartTime="2015-01-01T00:00:03Z" publishTime="2026-06-29T18:09:57.008661Z" minBufferTime="PT10S" timeShiftBufferDepth="PT1M2S" maxSegmentDuration="PT20S">
+	<UTCTiming schemeIdUri="urn:mpeg:dash:utc:http-xsdate:2014" value="https://time.akamai.com/?iso&amp;ms"/>
+	<BaseURL>https://c402-node61-cdn.connectmedia.hu/130204/0dcc8d6ec11fb72a1a86e359051b7fc9/6a42b4f6/</BaseURL>
+	<Period id="1" start="PT0S">
+		<AdaptationSet id="1" group="1" mimeType="audio/mp4" lang="hu" contentType="audio" segmentAlignment="true">
+			<ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="ae4ebff0-0771-3900-9ea9-d512609be958"/>
+			<ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed" value="Widevine Content Protection">
+				<cenc:pssh>AAAAV3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADcSEK5Ov/AHcTkAnqnVEmCb6VgaC2J1eWRybWtleW9zIhCuTr/wB3E5AJ6p1RJgm+lYSPPclZsG</cenc:pssh>
+				<ms:laurl xmlns:ms="urn:microsoft" licenseUrl="https://drm.connectmedia.hu/v10/130204/0dcc8d6ec11fb72a1a86e359051b7fc9/6a42b4f6/widevine"/>
+				<dashif:Laurl xmlns:dashif="urn:dashif:dash:protection:2015">https://drm.connectmedia.hu/v10/130204/0dcc8d6ec11fb72a1a86e359051b7fc9/6a42b4f6/widevine</dashif:Laurl>
+			</ContentProtection>
+			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+			<SegmentTemplate timescale="10000000" duration="100000000" initialization="204-M4_HUGEO_BU-$RepresentationID$-init.mp4" media="204-M4_HUGEO_BU-$RepresentationID$-$Number$.m4s"/>
+			<Representation id="mp4a_140800_hun=20000" bandwidth="140800" audioSamplingRate="48000" codecs="mp4a.40.2">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="2" group="1" mimeType="audio/mp4" lang="mul" contentType="audio" segmentAlignment="true">
+			<ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="ae4ebff0-0771-3900-9ea9-d512609be958"/>
+			<ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed" value="Widevine Content Protection">
+				<cenc:pssh>AAAAV3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADcSEK5Ov/AHcTkAnqnVEmCb6VgaC2J1eWRybWtleW9zIhCuTr/wB3E5AJ6p1RJgm+lYSPPclZsG</cenc:pssh>
+				<ms:laurl xmlns:ms="urn:microsoft" licenseUrl="https://drm.connectmedia.hu/v10/130204/0dcc8d6ec11fb72a1a86e359051b7fc9/6a42b4f6/widevine"/>
+				<dashif:Laurl xmlns:dashif="urn:dashif:dash:protection:2015">https://drm.connectmedia.hu/v10/130204/0dcc8d6ec11fb72a1a86e359051b7fc9/6a42b4f6/widevine</dashif:Laurl>
+			</ContentProtection>
+			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+			<SegmentTemplate timescale="10000000" duration="100000000" initialization="204-M4_HUGEO_BU-$RepresentationID$-init.mp4" media="204-M4_HUGEO_BU-$RepresentationID$-$Number$.m4s"/>
+			<Representation id="mp4a_140800_mul=20001" bandwidth="140800" audioSamplingRate="48000" codecs="mp4a.40.2">
+				<AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2"/>
+			</Representation>
+		</AdaptationSet>
+		<AdaptationSet id="3" group="3" mimeType="application/mp4" lang="hu" contentType="text" segmentAlignment="true">
+			<SupplementalProperty schemeIdUri="urn:ateme:dash:ASComponents" value="text"/>
+			<Accessibility schemeIdUri="urn:mpeg:dash:role:2011" value="caption"/>
+			<Accessibility schemeIdUri="urn:tva:metadata:cs:AudioPurposeCS:2007" value="2"/>
+			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="subtitle"/>
+			<SegmentTemplate timescale="10000000" duration="100000000" initialization="204-M4_HUGEO_BU-$RepresentationID$-init.mp4" media="204-M4_HUGEO_BU-$RepresentationID$-$Number$.m4s"/>
+			<Representation id="dfxp_10000_hun_CAPT=30000" bandwidth="10000" codecs="stpp"/>
+		</AdaptationSet>
+		<AdaptationSet id="4" group="2" frameRate="25" mimeType="video/mp4" startWithSAP="1" contentType="video" par="16:9" minBandwidth="400000" maxBandwidth="3699968" minWidth="426" maxWidth="1920" minHeight="240" maxHeight="1080" segmentAlignment="true">
+			<ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" cenc:default_KID="0da40dab-d977-3f95-a545-41076117fadd"/>
+			<ContentProtection schemeIdUri="urn:uuid:edef8ba9-79d6-4ace-a3c8-27dcd51d21ed" value="Widevine Content Protection">
+				<cenc:pssh>AAAAV3Bzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAADcSEA2kDavZdz+VpUVBB2EX+t0aC2J1eWRybWtleW9zIhANpA2r2Xc/laVFQQdhF/rdSPPclZsG</cenc:pssh>
+				<ms:laurl xmlns:ms="urn:microsoft" licenseUrl="https://drm.connectmedia.hu/v10/130204/0dcc8d6ec11fb72a1a86e359051b7fc9/6a42b4f6/widevine"/>
+				<dashif:Laurl xmlns:dashif="urn:dashif:dash:protection:2015">https://drm.connectmedia.hu/v10/130204/0dcc8d6ec11fb72a1a86e359051b7fc9/6a42b4f6/widevine</dashif:Laurl>
+			</ContentProtection>
+			<Role schemeIdUri="urn:mpeg:dash:role:2011" value="main"/>
+			<SegmentTemplate timescale="10000000" duration="100000000" initialization="204-M4_HUGEO_BU-$RepresentationID$-init.mp4" media="204-M4_HUGEO_BU-$RepresentationID$-$Number$.m4s"/>
+			<Representation id="avc1_400000=10000" bandwidth="400000" width="426" height="240" sar="640:639" codecs="avc1.42e015"/>
+			<Representation id="avc1_699968=10001" bandwidth="699968" width="640" height="360" sar="1:1" codecs="avc1.42e01e"/>
+			<Representation id="avc1_1099968=10002" bandwidth="1099968" width="854" height="480" sar="1:1" codecs="avc1.4d401e"/>
+			<Representation id="avc1_1499968=10003" bandwidth="1499968" width="960" height="540" sar="1:1" codecs="avc1.4d401f"/>
+			<Representation id="avc1_1800000=10004" bandwidth="1800000" width="1280" height="720" sar="1:1" codecs="avc1.64001f"/>
+			<Representation id="avc1_3699968=10005" bandwidth="3699968" width="1920" height="1080" sar="1:1" codecs="avc1.640028"/>
+		</AdaptationSet>
+	</Period>
+</MPD>
